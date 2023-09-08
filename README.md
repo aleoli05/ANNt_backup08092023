@@ -1,33 +1,20 @@
 # ANNt
 Artificial Neural Network with 't' Distribution Portfolio 
 
-To operate, the sequin packages must be installed:
-install.packages("quantmod")
-install.packages("PerformanceAnalytics")
-install.packages("magrittr")
-install.packages("fBasics")
-install.packages("tidyverse")
-install.packages("stringr")
-install.packages("dplyr")
-install.packages("neuralnet")
-install.packages("zoo")
-install.packages("forecast")
-install.packages("timetk")
-install.packages("moments")
-install.packages("data.table")
-install.packages("ggplot2")
-install.packages("rvest")
-install.packages("caret")
-install.package ("readxl")
-install.packages("writexl")
-install.packages("portfolio.optimization")
-install.packages("PortfolioAnalytics")
-install.packages("ROI")
-install.packages("fPortfolio")
-install.packages("timeSeries")
-install.packages("gridExtra")
-install.packages("cowplot")
-install.packages("portfolioBacktest")
-install.packages("CVXR")
-install.packages("MFDFA")
-install.packages("DEoptim")
+Follow the steps:
+1) Install and enable remotes package:
+   install.packages('remotes')
+   library(remotes)
+
+2) Install and enable the ANNt package:
+   install_github('aleoli05/ANNt')
+   library(ANNt)
+   
+3) Install all required package in ANNt:
+   install_required_pakage()
+
+4) Import the assets series:
+   Example: Assets_series (Tickers=c('AAPL','GOOG','CCBG','XOM','TSLA'),'^GSPC', '2018-01-03', '2023-09-07')
+
+5) ANNt order generate:
+   Exaple: ANNt_order ('2018-01-11', '2022-12-30','2023-01-09')
